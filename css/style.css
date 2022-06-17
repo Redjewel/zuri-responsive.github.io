@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+* {
+    font-family: "Poppins";
+}
+
+body {
+    margin: 0 auto;
+    background-color: hsl(0, 100%, 74%);
+    background-image: url("../img/bg-intro-desktop.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.landing {
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.landing-copy {
+    color: white;
+    text-align: center;
+}
+
+.landing-copy h2 {
+    margin: 0px;
+}
+
+.landing-form {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.trial {
+    padding: 24px;
+    background-color: hsl(248, 32%, 49%);
+    color: white;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.2)
+}
+
+.trial span {
+    font-weight: 600;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+}
+
+form div input,
+textarea,
+select {
+    padding: 16px 16px;
+    border: 1px solid hsl(246, 25%, 77%);
+    border-radius: 8px;
+}
+
+input::placeholder {
+    font-weight: 600;
+    color: hsl(249, 10%, 26%);
+}
+
+form {
+    background: white;
+    padding: 32px 24px;
+    gap: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+.btn {
+    border: none;
+    background-color: hsl(154, 59%, 51%);
+    text-transform: uppercase;
+    font-weight: 600;
+    color: white;
+    font-size: 16px;
+    box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    border-radius: 8px;
+}
+
+.terms {
+    color: hsl(246, 25%, 77%);
+    text-align: center;
+}
+
+.terms span {
+    font-weight: 600;
+    color: hsl(0, 100%, 74%);
+}
+
+@media (orientation: landscape) {
+    body {
+        background-image: url("../img/bg-intro-mobile.png");
+    }
+    .landing {
+        flex-direction: row;
+        align-items: center;
+        padding: 0 8.88%;
+        height: 100vh;
+        gap: 32px;
+    }
+    .landing-copy {
+        text-align: left;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+    .landing-copy h2 {
+        font-size: 48px;
+        line-height: 64px;
+    }
+    .landing-form {
+        flex: 1;
+        flex-grow: 1;
+    }
+}
